@@ -1,5 +1,10 @@
 # 概要
 
+- 组件(Components)
+- 服务(Service)
+- 模块(Module)
+- 路由器(Router)
+
 # 组件(Components)
 
 [https://angular.cn/guide/component-overview](https://angular.cn/guide/component-overview)
@@ -30,6 +35,10 @@
 
 并自动把模块导入至 app.module.ts
 
+![](readme/20221105222355.png)
+
+![](readme/20221105222549.png)
+
 # 服务(Service)
 
 [https://angular.cn/guide/architecture-services](https://angular.cn/guide/architecture-services)
@@ -53,7 +62,7 @@ Angular 不会强迫你遵循这些原则。Angular 只会通过依赖注入来�
 
 [https://angular.cn/guide/architecture-modules](https://angular.cn/guide/architecture-modules)
 
-Angular 应用是模块化的，它拥有自己的模块化系统，称作 NgModule。一个 NgModule 就是<mark>一个容器</mark>，用于存放一些内聚的代码块，这些代码块专注于某个应用领域、某个工作流或一组紧密相关的功能。它可以包含一些组件、服务提供者或其它代码文件，其作用域由包含它们的 NgModule 定义。它还可以导入一些由其它模块中导出的功能，并导出一些指定的功能供其它 NgModule 使用。
+Angular 应用是模块化的，它拥有自己的模块化系统，称作 NgModule。一个 NgModule 就是<mark>一个容器</mark>，用于存放一些内聚的代码块，这些代码块<mark>专注于某个应用领域</mark>、某个工作流或一组紧密相关的功能。它可以包含一些组件、服务提供者或其它代码文件，其作用域由包含它们的 NgModule 定义。它还可以导入一些由其它模块中导出的功能，并导出一些指定的功能供其它 NgModule 使用。
 
 ## 模块和组件的关系
 
@@ -69,4 +78,12 @@ NgModule 为其中的组件提供了一个编译上下文环境。根模块总�
 
 [https://angular.cn/guide/architecture-modules#ngmodules-and-javascript-modules](https://angular.cn/guide/architecture-modules#ngmodules-and-javascript-modules)
 
-# 路由(Router)
+# 路由器(Router)
+
+[https://angular.cn/guide/router-reference](https://angular.cn/guide/router-reference)
+
+Angular 的 Router 是一个可选服务，它为指定的 URL 提供特定的组件视图。它不是 Angular 核心的一部分，因此它位于自己的包 `@angular/router` 中。
+
+# 风格指南
+
+[https://angular.cn/guide/styleguide](https://angular.cn/guide/styleguide)
