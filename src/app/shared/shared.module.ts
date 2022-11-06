@@ -8,6 +8,10 @@ import { CardComponent } from './card/card.component';
   ],
   imports: [
     CommonModule
+  ],
+  exports: [
+    CommonModule,
+    CardComponent
   ]
 })
 export class SharedModule { }
