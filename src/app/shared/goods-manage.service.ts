@@ -7,15 +7,11 @@ import { Goods } from '../types/goods';
 })
 export class GoodsManageService {
   currentGoodsList: { target: Goods; amount: number }[] = [];
-  totalAmount: number = 0;
-  amountChange: Subject<number> = new Subject<number>();
+  currentAmount: number = 0
+  totalAmount: BehaviorSubject<number> = new BehaviorSubject<number>(0);
 
-  constructor() {
-    this.amountChange.subscribe((value) => {
-      this.totalAmount = value;
-    });
-    console.log(this.totalAmount);
-  }
+
+  constructor() { }
 
   setCurrentGoodsList(goods: Goods, count: number) {
     let hasItemFlg = false;
@@ -29,15 +25,15 @@ export class GoodsManageService {
     if (!hasItemFlg) {
       this.currentGoodsList.push({ target: goods, amount: count });
     }
-    this.setTotalAmount();
+    this.currentAmount = 0;
+    this.currentGoodsList.forEach((item) => {
+      this.currentAmount += item.amount;
+    });
+    this.totalAmount = new BehaviorSubject<number>(this.currentAmount);
   }
 
-  setTotalAmount() {
-    this.totalAmount = 0;
-    this.currentGoodsList.forEach((item) => {
-      this.totalAmount += item.amount;
-    });
-    this.amountChange.next(this.totalAmount);
+  getTotalAmount(): Observable<number> {
+    return this.totalAmount.asObservable();
   }
 
   getCurrentGoodsList() {
