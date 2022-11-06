@@ -7,7 +7,8 @@ import { RecommendDetailComponent } from './recommend/recommend-detail/recommend
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'recommend', component: RecommendDetailComponent },
-  { path: 'after-sales', component: HomeComponent },
+  { path: 'cart', component: HomeComponent },
+  { path: 'survey', component: HomeComponent },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
