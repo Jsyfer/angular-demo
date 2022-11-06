@@ -95,6 +95,10 @@ Angular 应用是模块化的，它拥有自己的模块化系统，称作 NgMod
 
 ![](readme/20221106161753.png)
 
+- 如何创建适用于该模块的组件
+
+![](readme/20221106163502.png)  
+
 ## 模块和组件的关系
 
 [https://angular.cn/guide/architecture-modules#ngmodules-and-components](https://angular.cn/guide/architecture-modules#ngmodules-and-components)

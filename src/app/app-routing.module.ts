@@ -3,12 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RecommendDetailComponent } from './recommend/recommend-detail/recommend-detail.component';
+import { SurveyDetailComponent } from './survey/survey-detail/survey-detail.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'recommend', component: RecommendDetailComponent },
   { path: 'cart', component: HomeComponent },
-  { path: 'survey', component: HomeComponent },
+  { path: 'survey', component: SurveyDetailComponent },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'

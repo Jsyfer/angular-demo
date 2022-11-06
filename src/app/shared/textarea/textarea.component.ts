@@ -6,7 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./textarea.component.css']
 })
 export class TextareaComponent implements OnInit {
-  @Input() areaTitle : string = '';
+  @Input() areaTitle? : string = '';
   constructor() { }
 
   ngOnInit(): void {

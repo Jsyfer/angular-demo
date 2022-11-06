@@ -8,6 +8,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { RecommendModule } from './recommend/recommend.module';
+import { SurveyModule } from './survey/survey.module';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { RecommendModule } from './recommend/recommend.module';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    RecommendModule
+    RecommendModule,
+    SurveyModule
   ],
   providers: [],
   bootstrap: [AppComponent]
