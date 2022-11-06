@@ -39,9 +39,9 @@
 
 [https://angular.cn/guide/inputs-outputs](https://angular.cn/guide/inputs-outputs)
 
-![](readme/20221106112759.png)  
+![](readme/20221106112759.png)
 
-![](readme/20221106112826.png)  
+![](readme/20221106112826.png)
 
 # 服务(Service)
 
@@ -106,6 +106,10 @@ NgModule 为其中的组件提供了一个编译上下文环境。根模块总�
 [https://angular.cn/guide/router-reference](https://angular.cn/guide/router-reference)
 
 Angular 的 Router 是一个可选服务，它为指定的 URL 提供特定的组件视图。它不是 Angular 核心的一部分，因此它位于自己的包 `@angular/router` 中。
+
+## 模块和服务 lazyload
+
+[https://angular.io/guide/providers#limiting-provider-scope-by-lazy-loading-modules](https://angular.io/guide/providers#limiting-provider-scope-by-lazy-loading-modules )
 
 # 风格指南
 
