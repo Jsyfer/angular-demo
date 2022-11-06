@@ -1,9 +1,8 @@
-<div class="card" style="width: 18rem;">
-  <img src="{{cardImgSrc}}" class="card-img-top" alt="{{cardImgAlt}}">
+<div class="card text-center" style="width: 18rem">
+  <img src="{{ cardImgSrc }}" class="card-img-top" alt="{{ cardImgAlt }}" />
   <div class="card-body">
-    <h5 class="card-title">{{cardTitle}}</h5>
-    <p class="card-text">{{cardText}}</p>
-    <app-counter *ngIf="useCounter" (countEvent)="getCount($event)"></app-counter>
-    <a *ngIf="!useCounter" href="{{cardActionUrl}}" class="btn btn-primary">{{cardAction}}</a>
+    <h5 class="card-title">{{ cardTitle }}</h5>
+    <p class="card-text">{{ cardText }}</p>
+    <a href="{{ cardActionUrl }}" class="btn btn-primary">{{ cardAction }}</a>
   </div>
 </div>

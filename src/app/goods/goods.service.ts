@@ -6,7 +6,7 @@ import { Goods } from '../types/goods';
 @Injectable({
   providedIn: 'root'
 })
-export class RecommendService {
+export class GoodsService {
 
   constructor() { }
 

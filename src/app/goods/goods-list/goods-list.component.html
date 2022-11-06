@@ -1,0 +1,7 @@
+<div class="container">
+  <div class="row row-cols-3">
+    <div class="col" *ngFor="let goods of goodsList">
+      <app-goods-detail [goods]="goods"></app-goods-detail>
+    </div>
+  </div>
+</div>

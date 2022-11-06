@@ -7,7 +7,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
-import { RecommendModule } from './recommend/recommend.module';
+import { GoodsModule } from './goods/goods.module';
 import { SurveyModule } from './survey/survey.module';
 
 @NgModule({
@@ -21,7 +21,7 @@ import { SurveyModule } from './survey/survey.module';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
-    RecommendModule,
+    GoodsModule,
     SurveyModule
   ],
   providers: [],

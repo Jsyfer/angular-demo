@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-card',
@@ -12,16 +12,10 @@ export class CardComponent implements OnInit {
   @Input() cardText? : string = '';
   @Input() cardAction? : string = '';
   @Input() cardActionUrl? : string = '';
-  @Input() useCounter? : boolean = false;
   count: number = 0;
 
   constructor() { }
 
   ngOnInit(): void {
   }
-
-  getCount(value: number) {
-    this.count = value;
-  }
-
 }
