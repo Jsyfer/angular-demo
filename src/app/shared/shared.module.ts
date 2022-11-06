@@ -13,7 +13,8 @@ import { TextareaComponent } from './textarea/textarea.component';
   ],
   exports: [
     CommonModule,
-    CardComponent
+    CardComponent,
+    TextareaComponent
   ]
 })
 export class SharedModule { }
