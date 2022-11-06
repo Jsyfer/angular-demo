@@ -6,11 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./card.component.css']
 })
 export class CardComponent implements OnInit {
-  @Input() cardImgSrc? : String= '';
-  @Input() cardImgAlt? : String = '';
-  @Input() cardTitle? : String = '';
-  @Input() cardText? : String = '';
-  @Input() cardAction? : String = '详细';
+  @Input() cardImgSrc? : string= '';
+  @Input() cardImgAlt? : string = '';
+  @Input() cardTitle? : string = '';
+  @Input() cardText? : string = '';
+  @Input() cardAction? : string = '详细';
 
   constructor() { }
 
