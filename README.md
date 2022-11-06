@@ -35,11 +35,15 @@
 
 并自动把模块导入至 app.module.ts
 
+![](readme/20221106162717.png)
+
+![](readme/20221106162737.png)
+
 ## 组件之间的数据共享
 
 [https://angular.cn/guide/inputs-outputs](https://angular.cn/guide/inputs-outputs)
 
-![](readme/20221106112759.png)
+![](readme/20221105222355.png)
 
 ![](readme/20221106112826.png)
 
@@ -87,6 +91,10 @@ Angular 应用是模块化的，它拥有自己的模块化系统，称作 NgMod
 - 一个以该模块命名的文件夹
 - 一个模块文件 `<module-name>.module.ts`
 
+![](readme/20221106161822.png)
+
+![](readme/20221106161753.png)
+
 ## 模块和组件的关系
 
 [https://angular.cn/guide/architecture-modules#ngmodules-and-components](https://angular.cn/guide/architecture-modules#ngmodules-and-components)
@@ -109,7 +117,7 @@ Angular 的 Router 是一个可选服务，它为指定的 URL 提供特定的�
 
 ## 模块和服务 lazyload
 
-[https://angular.io/guide/providers#limiting-provider-scope-by-lazy-loading-modules](https://angular.io/guide/providers#limiting-provider-scope-by-lazy-loading-modules )
+[https://angular.io/guide/providers#limiting-provider-scope-by-lazy-loading-modules](https://angular.io/guide/providers#limiting-provider-scope-by-lazy-loading-modules)
 
 # 风格指南
 
