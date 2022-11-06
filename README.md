@@ -35,9 +35,13 @@
 
 并自动把模块导入至 app.module.ts
 
-![](readme/20221105222355.png)
+## 组件之间的数据共享
 
-![](readme/20221105222549.png)
+[https://angular.cn/guide/inputs-outputs](https://angular.cn/guide/inputs-outputs)
+
+![](readme/20221106112759.png)  
+
+![](readme/20221106112826.png)  
 
 # 服务(Service)
 
@@ -53,6 +57,15 @@ Angular 把组件和服务区分开，以提高模块性和复用性。通过把
 
 Angular 不会强迫你遵循这些原则。Angular 只会通过依赖注入来帮你更容易地将应用逻辑分解为服务，并让这些服务可用于各个组件中。
 
+## 创建方法
+
+1. 在终端窗口中，导航到要放置你应用的目录。
+2. 运行 `ng generate service <service-name>`命令，其中 `<service-name>` 是新组件的名字。
+
+默认情况下，该命令会创建以下内容：
+
+- 一个服务文件 `<service-name>.service.ts`
+
 ## 常见用法
 
 - 组件之间的通信
@@ -65,12 +78,14 @@ Angular 不会强迫你遵循这些原则。Angular 只会通过依赖注入来�
 Angular 应用是模块化的，它拥有自己的模块化系统，称作 NgModule。一个 NgModule 就是<mark>一个容器</mark>，用于存放一些内聚的代码块，这些代码块<mark>专注于某个应用领域</mark>、某个工作流或一组紧密相关的功能。它可以包含一些组件、服务提供者或其它代码文件，其作用域由包含它们的 NgModule 定义。它还可以导入一些由其它模块中导出的功能，并导出一些指定的功能供其它 NgModule 使用。
 
 ## 创建方法
+
 1. 在终端窗口中，导航到要放置你应用的目录。
 2. 运行 `ng generate module <module-name>`命令，其中 `<module-name>` 是新组件的名字。
 
-![](readme/20221106110351.png)  
+默认情况下，该命令会创建以下内容：
 
-![](readme/20221106110434.png)  
+- 一个以该模块命名的文件夹
+- 一个模块文件 `<module-name>.module.ts`
 
 ## 模块和组件的关系
 
