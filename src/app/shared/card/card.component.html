@@ -3,6 +3,7 @@
   <div class="card-body">
     <h5 class="card-title">{{cardTitle}}</h5>
     <p class="card-text">{{cardText}}</p>
-    <a href="#" class="btn btn-primary">{{cardAction}}</a>
+    <app-counter *ngIf="useCounter" (countEvent)="getCount($event)"></app-counter>
+    <a *ngIf="!useCounter" href="{{cardActionUrl}}" class="btn btn-primary">{{cardAction}}</a>
   </div>
 </div>

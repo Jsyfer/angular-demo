@@ -10,11 +10,18 @@ export class CardComponent implements OnInit {
   @Input() cardImgAlt? : string = '';
   @Input() cardTitle? : string = '';
   @Input() cardText? : string = '';
-  @Input() cardAction? : string = '详细';
+  @Input() cardAction? : string = '';
+  @Input() cardActionUrl? : string = '';
+  @Input() useCounter? : boolean = false;
+  count: number = 0;
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  getCount(value: number) {
+    this.count = value;
   }
 
 }

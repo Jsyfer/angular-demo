@@ -43,9 +43,7 @@
 
 [https://angular.cn/guide/inputs-outputs](https://angular.cn/guide/inputs-outputs)
 
-![](readme/20221105222355.png)
-
-![](readme/20221106112826.png)
+![](readme/20221106174534.png)  
 
 # 服务(Service)
 
