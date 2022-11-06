@@ -4,13 +4,15 @@ import { GoodsListComponent } from './goods-list/goods-list.component';
 import { SharedModule } from '../shared/shared.module';
 import { GoodsService } from './goods.service';
 import { GoodsDetailComponent } from './goods-detail/goods-detail.component';
+import { GoodsPreviewComponent } from './goods-preview/goods-preview.component';
 
 
 
 @NgModule({
   declarations: [
     GoodsListComponent,
-    GoodsDetailComponent
+    GoodsDetailComponent,
+    GoodsPreviewComponent
   ],
   imports: [
     CommonModule,

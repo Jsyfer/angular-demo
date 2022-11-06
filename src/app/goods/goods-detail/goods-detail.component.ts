@@ -8,17 +8,9 @@ import { Goods } from 'src/app/types/goods';
   styleUrls: ['./goods-detail.component.css'],
 })
 export class GoodsDetailComponent implements OnInit{
-  @Input() goods: Goods = {
-    id: 0,
-    name: '',
-    imgUrl: '',
-    description: '',
-  };
-  constructor(private goodsManagerService: GoodsManageService) {}
+
+  constructor() {}
 
   ngOnInit(): void {}
 
-  getCount(count: number) {
-    this.goodsManagerService.setCurrentGoodsList(this.goods,count)
-  }
 }
