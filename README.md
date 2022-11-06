@@ -64,6 +64,14 @@ Angular 不会强迫你遵循这些原则。Angular 只会通过依赖注入来�
 
 Angular 应用是模块化的，它拥有自己的模块化系统，称作 NgModule。一个 NgModule 就是<mark>一个容器</mark>，用于存放一些内聚的代码块，这些代码块<mark>专注于某个应用领域</mark>、某个工作流或一组紧密相关的功能。它可以包含一些组件、服务提供者或其它代码文件，其作用域由包含它们的 NgModule 定义。它还可以导入一些由其它模块中导出的功能，并导出一些指定的功能供其它 NgModule 使用。
 
+## 创建方法
+1. 在终端窗口中，导航到要放置你应用的目录。
+2. 运行 `ng generate module <module-name>`命令，其中 `<module-name>` 是新组件的名字。
+
+![](readme/20221106110351.png)  
+
+![](readme/20221106110434.png)  
+
 ## 模块和组件的关系
 
 [https://angular.cn/guide/architecture-modules#ngmodules-and-components](https://angular.cn/guide/architecture-modules#ngmodules-and-components)
@@ -87,3 +95,6 @@ Angular 的 Router 是一个可选服务，它为指定的 URL 提供特定的�
 # 风格指南
 
 [https://angular.cn/guide/styleguide](https://angular.cn/guide/styleguide)
+
+- [特性模块](https://angular.cn/guide/styleguide#feature-modules) (Feature modules)
+- [共享特性模块](https://angular.cn/guide/styleguide#shared-feature-module) (Shared feature module)
