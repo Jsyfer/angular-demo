@@ -11,7 +11,9 @@ export class NavbarComponent implements OnInit {
 
   constructor(private goodsManageService: GoodsManageService) {}
 
-  ngOnInit(): void {
+  ngOnInit(): void { }
+
+  ngDoCheck(): void {
     this.goodsManageService.getTotalAmount().subscribe((amount) => {
       this.totalAmount = amount;
     });
