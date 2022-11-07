@@ -39,4 +39,14 @@ export class GoodsManageService {
   getCurrentGoodsList() {
     return this.currentGoodsList;
   }
+
+  getGoodsAmountById(id: number): number {
+    let goodsAmount = 0
+    this.currentGoodsList.forEach((item) => {
+      if (item.target.id === id) {
+        goodsAmount = item.amount;
+      }
+    });
+    return goodsAmount;
+  }
 }

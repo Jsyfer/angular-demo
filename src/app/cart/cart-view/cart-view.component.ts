@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { GoodsManageService } from 'src/app/shared/goods-manage.service';
+import { Goods } from 'src/app/types/goods';
 
 @Component({
   selector: 'app-cart-view',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CartViewComponent implements OnInit {
 
-  constructor() { }
+  currentGoodsList: { target: Goods; amount: number }[] = [];
+
+  constructor(private goodsManageService: GoodsManageService) { }
 
   ngOnInit(): void {
+    this.currentGoodsList = this.goodsManageService.getCurrentGoodsList();
   }
 
 }

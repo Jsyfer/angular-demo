@@ -1,1 +1,16 @@
-<p>cart-view works!</p>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Goods Name</th>
+      <th scope="col">Amount</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let goods of currentGoodsList">
+      <th scope="row">{{goods.target.id}}</th>
+      <td>{{goods.target.name}}</td>
+      <td>{{goods.amount}}</td>
+    </tr>
+  </tbody>
+</table>

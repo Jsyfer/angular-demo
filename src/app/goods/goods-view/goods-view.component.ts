@@ -10,10 +10,10 @@ import { GoodsService } from '../goods.service';
 export class GoodsViewComponent implements OnInit {
   goodsList: Goods[] = []
 
-  constructor(private GoodsService: GoodsService) { }
+  constructor(private goodsService: GoodsService) { }
 
   ngOnInit(): void {
-    this.GoodsService.getGoodsList().subscribe(goodsList => this.goodsList = goodsList);
+    this.goodsService.getGoodsList().subscribe(goodsList => this.goodsList = goodsList);
   }
 
 }

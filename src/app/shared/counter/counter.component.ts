@@ -1,4 +1,4 @@
-import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-counter',
@@ -6,7 +6,7 @@ import { Component, EventEmitter, OnInit, Output } from '@angular/core';
   styleUrls: ['./counter.component.css']
 })
 export class CounterComponent implements OnInit {
-  count : number = 0;
+  @Input() count : number = 0;
   @Output() countEvent = new EventEmitter<number>();
   constructor() { }
 

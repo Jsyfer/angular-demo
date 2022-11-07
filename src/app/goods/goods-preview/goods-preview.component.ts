@@ -15,12 +15,14 @@ export class GoodsPreviewComponent implements OnInit {
     description: '',
   };
   count: number = 0;
-  constructor(private goodsManagerService: GoodsManageService) {}
+  constructor(private goodsManageService: GoodsManageService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.count = this.goodsManageService.getGoodsAmountById(this.goods.id);
+  }
 
   getCount(count: number) {
     this.count = count;
-    this.goodsManagerService.setCurrentGoodsList(this.goods,count)
+    this.goodsManageService.setCurrentGoodsList(this.goods,count)
   }
 }

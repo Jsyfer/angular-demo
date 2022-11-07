@@ -6,6 +6,6 @@
   ></app-card>
   <ul class="list-group list-group-flush">
     <li class="list-group-item text-center">amount of item: {{count}}</li>
-    <li class="list-group-item text-center"><app-counter (countEvent)="getCount($event)"></app-counter></li>
+    <li class="list-group-item text-center"><app-counter [count]="count" (countEvent)="getCount($event)"></app-counter></li>
   </ul>
 </div>
