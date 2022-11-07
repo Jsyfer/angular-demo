@@ -3,10 +3,9 @@
   [cardImgSrc]="goods.imgUrl"
   [cardTitle]="goods.name"
   [cardText]="goods.description"
-  [cardAction]="'Detail'"
   ></app-card>
   <ul class="list-group list-group-flush">
+    <li class="list-group-item text-center">amount of item: {{count}}</li>
     <li class="list-group-item text-center"><app-counter (countEvent)="getCount($event)"></app-counter></li>
   </ul>
 </div>
-

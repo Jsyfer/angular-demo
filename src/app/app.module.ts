@@ -9,6 +9,7 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { GoodsModule } from './goods/goods.module';
 import { SurveyModule } from './survey/survey.module';
+import { SharedModule } from './shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { SurveyModule } from './survey/survey.module';
     BrowserModule,
     AppRoutingModule,
     NgbModule,
+    SharedModule,
     GoodsModule,
     SurveyModule
   ],

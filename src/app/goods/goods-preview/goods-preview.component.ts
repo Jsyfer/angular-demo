@@ -14,11 +14,13 @@ export class GoodsPreviewComponent implements OnInit {
     imgUrl: '',
     description: '',
   };
+  count: number = 0;
   constructor(private goodsManagerService: GoodsManageService) {}
 
   ngOnInit(): void {}
 
   getCount(count: number) {
+    this.count = count;
     this.goodsManagerService.setCurrentGoodsList(this.goods,count)
   }
 }

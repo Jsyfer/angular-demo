@@ -10,8 +10,6 @@ export class CardComponent implements OnInit {
   @Input() cardImgAlt? : string = '';
   @Input() cardTitle? : string = '';
   @Input() cardText? : string = '';
-  @Input() cardAction? : string = '';
-  @Input() cardActionUrl? : string = '';
   count: number = 0;
 
   constructor() { }
