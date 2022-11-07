@@ -3,11 +3,11 @@ import { Goods } from 'src/app/types/goods';
 import { GoodsService } from '../goods.service';
 
 @Component({
-  selector: 'app-goods-list',
-  templateUrl: './goods-list.component.html',
-  styleUrls: ['./goods-list.component.css']
+  selector: 'app-goods-view',
+  templateUrl: './goods-view.component.html',
+  styleUrls: ['./goods-view.component.css']
 })
-export class GoodsListComponent implements OnInit {
+export class GoodsViewComponent implements OnInit {
   goodsList: Goods[] = []
 
   constructor(private GoodsService: GoodsService) { }

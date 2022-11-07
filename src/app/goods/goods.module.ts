@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GoodsListComponent } from './goods-list/goods-list.component';
+import { GoodsViewComponent } from './goods-view/goods-view.component';
 import { SharedModule } from '../shared/shared.module';
 import { GoodsService } from './goods.service';
 import { GoodsDetailComponent } from './goods-detail/goods-detail.component';
@@ -10,7 +10,7 @@ import { GoodsPreviewComponent } from './goods-preview/goods-preview.component';
 
 @NgModule({
   declarations: [
-    GoodsListComponent,
+    GoodsViewComponent,
     GoodsDetailComponent,
     GoodsPreviewComponent
   ],
