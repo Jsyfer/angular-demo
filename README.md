@@ -31,7 +31,7 @@
 - 一个组件文件 `<component-name>.component.ts`
 - 一个模板文件 `<component-name>.component.html`
 - 一个 CSS 文件，`<component-name>.component.css`
-- 测试文件 `<component-name>.component.spec.ts`
+- 一个测试文件 `<component-name>.component.spec.ts`
 
 并自动把模块导入至 app.module.ts
 
@@ -67,6 +67,9 @@ Angular 不会强迫你遵循这些原则。Angular 只会通过依赖注入来�
 默认情况下，该命令会创建以下内容：
 
 - 一个服务文件 `<service-name>.service.ts`
+- 一个测试文件 `<service-name>.service.spec.ts`
+
+![](readme/20221107201735.png)  
 
 ## 常见用法
 
