@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { GoodsViewComponent } from './goods-view/goods-view.component';
 import { SharedModule } from '../shared/shared.module';
 import { GoodsService } from './goods.service';
-import { GoodsDetailComponent } from './goods-detail/goods-detail.component';
 import { GoodsPreviewComponent } from './goods-preview/goods-preview.component';
 
 
@@ -11,7 +10,6 @@ import { GoodsPreviewComponent } from './goods-preview/goods-preview.component';
 @NgModule({
   declarations: [
     GoodsViewComponent,
-    GoodsDetailComponent,
     GoodsPreviewComponent
   ],
   imports: [
