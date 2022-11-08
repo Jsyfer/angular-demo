@@ -124,9 +124,9 @@ NgModule 为其中的组件提供了一个编译上下文环境。根模块总�
 
 Angular 的 Router 是一个可选服务，它为指定的 URL 提供特定的组件视图。它不是 Angular 核心的一部分，因此它位于自己的包 `@angular/router` 中。
 
-## 模块和服务 lazyload
+## 惰性加载(lazyload)
 
-[https://angular.io/guide/providers#limiting-provider-scope-by-lazy-loading-modules](https://angular.io/guide/providers#limiting-provider-scope-by-lazy-loading-modules)
+[https://angular.cn/guide/lazy-loading-ngmodules](https://angular.cn/guide/lazy-loading-ngmodules)
 
 # 风格指南
 

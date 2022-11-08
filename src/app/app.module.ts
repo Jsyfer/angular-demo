@@ -25,8 +25,7 @@ import { CartModule } from './cart/cart.module';
     NgbModule,
     SharedModule,
     GoodsModule,
-    CartModule,
-    SurveyModule
+    CartModule
   ],
   providers: [],
   bootstrap: [AppComponent]
