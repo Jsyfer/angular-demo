@@ -8,7 +8,6 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { GoodsModule } from './goods/goods.module';
-import { SurveyModule } from './survey/survey.module';
 import { SharedModule } from './shared/shared.module';
 import { CartModule } from './cart/cart.module';
 
