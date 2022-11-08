@@ -3,9 +3,7 @@ import { Observable, of } from 'rxjs';
 import { GOODS } from '../mock-data/mock-goods';
 import { Goods } from '../types/goods';
 
-@Injectable({
-  providedIn: 'root'
-})
+@Injectable()
 export class GoodsService {
 
   constructor() { }
