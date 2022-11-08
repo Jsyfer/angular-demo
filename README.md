@@ -39,6 +39,10 @@
 
 ![](readme/20221106162737.png)
 
+## 生命周期
+
+[https://angular.cn/guide/lifecycle-hooks#lifecycle-event-sequence](https://angular.cn/guide/lifecycle-hooks#lifecycle-event-sequence)
+
 ## 组件之间的数据共享
 
 [https://angular.cn/guide/inputs-outputs](https://angular.cn/guide/inputs-outputs)
