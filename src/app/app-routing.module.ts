@@ -4,10 +4,12 @@ import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { GoodsViewComponent } from './goods/goods-view/goods-view.component';
 import { CartViewComponent } from './cart/cart-view/cart-view.component';
+import { GoodsPreviewComponent } from './goods/goods-preview/goods-preview.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'goods', component: GoodsViewComponent },
+  { path: 'goods/:id', component: GoodsPreviewComponent },
   { path: 'cart', component: CartViewComponent },
   { path: 'survey', loadChildren: () => import('./survey/survey.module').then(m => m.SurveyModule) },
   { path: '', redirectTo: '/home', pathMatch: 'full'},

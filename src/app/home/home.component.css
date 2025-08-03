@@ -1,0 +1,7 @@
+.wrapper{
+  user-select: none;
+  font-size: large;
+}
+.wrapper:active{
+  background-color: aqua;
+}
